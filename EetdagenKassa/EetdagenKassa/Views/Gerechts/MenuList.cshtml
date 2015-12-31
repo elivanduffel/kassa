@@ -1,0 +1,34 @@
+﻿@model IEnumerable<EetdagenKassa.Models.Gerecht>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Overzicht menu</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Omschrijving)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prijs)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Omschrijving)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prijs)
+            </td>
+            
+        </tr>
+    }
+
+</table>

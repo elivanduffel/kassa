@@ -1,0 +1,66 @@
+﻿@model EetdagenKassa.Models.Bestelling
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bestelling</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Shift)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shift)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kassa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kassa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotaalPrijs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotaalPrijs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bonnen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bonnen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bancontact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bancontact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BestellingID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
